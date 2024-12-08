@@ -10,6 +10,10 @@ jobs:
   run-python-code:
     runs-on: ubuntu-latest
     environment: Production  # Reference the environment requiring approval
+# jobs: Defines the tasks to perform.
+# run-python-code: The name of the job.
+# runs-on: Specifies the environment where the job runs (ubuntu-latest).
+# environment: The job requires approval to deploy in the Production environment.
 
     steps:
     # Checkout the repository
