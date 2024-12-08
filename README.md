@@ -58,7 +58,11 @@ Execution: It checks out the code, sets up Python, and runs the app.py script.
 View Logs: Navigate to the Actions tab in your GitHub repository to see the workflow's progress and output.
 Extending the Workflow
 .
-￼
-￼
+# Navigate to Actions and click on Review deployments
+![Pasted Graphic](https://github.com/user-attachments/assets/f7432210-1c21-4f8e-9953-ab8e66b02908)
+# Select Production and approve and deploy(In yml we added environment: Production because of this its asking for approval)
+![Review pending deployments](https://github.com/user-attachments/assets/0d20618f-f7d9-4d38-b754-f97128e8c6f4)
+# Finally workflow executed and we can see the result
+![Pasted Graphic 2](https://github.com/user-attachments/assets/c0400f30-c80a-4ab8-b70d-30c6acef9a55)
 
-￼
+
