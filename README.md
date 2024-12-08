@@ -7,48 +7,6 @@ This repository demonstrates a GitHub Actions workflow for running Python script
 The workflow file is located at:
 .github/workflows/run-python-code.yml
 
-Workflow Details
-Workflow Name
-# Steps Breakdown
-
-name: Run Python Code
-#The workflow is named "Run Python Code" to indicate its purpose.
-#Trigger Events
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-#push: The workflow is triggered whenever code is pushed to the main branch.
-#pull_request: It also runs when a pull request is opened.
-# Run Python Code
-
-jobs:
-  run-python-code:
-    runs-on: ubuntu-latest
-    environment: Production
-# jobs: Defines the tasks to perform.
-# run-python-code: The name of the job.
-# runs-on: Specifies the environment where the job runs (ubuntu-latest).
-# environment: The job requires approval to deploy in the Production environment.
-
-1. Checkout Repository
-
-- name: Checkout code
-  uses: actions/checkout@v3
-This step uses the checkout action to fetch the repository’s code.
-2. Set Up Python Environment
-- name: Set up Python
-  uses: actions/setup-python@v4
-  with:
-    python-version: '3.x'
-The setup-python action configures the workflow to use Python version 3.x.
-3. Run Python Script
-- name: Run Python script
-  run: |
-    python app.py
-Executes the Python script app.py in the repository.
-
 
 # How to Add This Workflow
 Step 1: Create the Workflow File
@@ -60,6 +18,7 @@ Inside the workflows folder, create a file named run-python-code.yml.
 # Step 2: Add the YAML Code
 Copy and paste the following into run-python-code.yml:
 
+```
 name: Run Python Code
 on:
   push:
@@ -84,6 +43,7 @@ jobs:
     - name: Run Python script
       run: |
         python app.py
+```
 
 # Step 3: Push Your Workflow to GitHub
 Commit and push your changes to the repository:
