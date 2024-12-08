@@ -9,6 +9,7 @@ on:
 jobs:
   run-python-code:
     runs-on: ubuntu-latest
+    environment: Production  # Reference the environment requiring approval
 
     steps:
     # Checkout the repository
