@@ -58,3 +58,7 @@ Execution: It checks out the code, sets up Python, and runs the app.py script.
 View Logs: Navigate to the Actions tab in your GitHub repository to see the workflow's progress and output.
 Extending the Workflow
 .
+￼
+￼
+
+￼
